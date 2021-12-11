@@ -10,14 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@master
+      - uses: actions/checkout@v2
 
-      - name: Lint 🧐
-        run: npm run lint:check
+      - name: Greeting
+        run: echo "Hello, world!"
 
-      - name: Test 🚨
-        run: npm test
-
-      - name: Build 🏗️
-        run: npm run build
+      - name: Another greeting
+        run: echo "Hello, world!"
