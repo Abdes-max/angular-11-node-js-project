@@ -12,7 +12,7 @@
 //   }
 // };
 
-exports.PRODUCTION = {
+module.exports = {
   HOST: "/cloudsql/peak-service-334315:us-central1:testdb",
   USER: "Abdes",
   PASSWORD: "123456",
