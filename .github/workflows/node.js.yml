@@ -13,9 +13,6 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@master
 
-      - name: Install 🔧
-        run: npm install
-
       - name: Lint 🧐
         run: npm run lint:check
 
