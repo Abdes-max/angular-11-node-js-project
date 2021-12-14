@@ -13,11 +13,11 @@
 // };
 
 module.exports = {
-  HOST: "/cloudsql/peak-service-334315:us-central1:testdb",
-  USER: "Abdes",
-  PASSWORD: "123456",
-  DB: "testdb",
-  dialect: "mysql",
+  HOST: '/cloudsql/peak-service-334315:us-central1:testdb',
+  USER: 'Abdes',
+  PASSWORD: '123456',
+  DB: 'testdb',
+  dialect: 'mysql',
   pool: {
       max: 5,
       min: 0,
