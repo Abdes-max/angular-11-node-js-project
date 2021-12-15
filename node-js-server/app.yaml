@@ -13,4 +13,10 @@
 
 # [START gae_quickstart_yaml]
 runtime: nodejs14
+
+env_variables:
+  DB_USER: "Abdes"
+  DB_NAME: “testdb"
+  DB_PASS: "123456"
+  DB_INSTANCE: "peak-service-334315:us-central1:testdb"
 # [END gae_quickstart_yaml]
