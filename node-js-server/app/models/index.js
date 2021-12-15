@@ -10,14 +10,25 @@ const { Sequelize } = require('sequelize');
 // const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 //   host: dbConfig.HOST,
 //   dialect: dbConfig.dialect,
-//   dialectOptions: {
-//     socketPath: dbConfig.HOST,
-//   },
+//   operatorsAliases: 0,
+//   pool: {
+//     max: dbConfig.pool.max,
+//     min: dbConfig.pool.min,
+//     acquire: dbConfig.pool.acquire,
+//     idle: dbConfig.pool.idle
+//   }
 // });
 
 const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
   host: `/cloudsql/${DB_INSTANCE}`,
   dialect: 'mysql',
+  // operatorsAliases: 0,
+  // pool: {
+  //   max: dbConfig.pool.max,
+  //   min: dbConfig.pool.min,
+  //   acquire: dbConfig.pool.acquire,
+  //   idle: dbConfig.pool.idle
+  // }
   dialectOptions: {
     socketPath: `/cloudsql/${DB_INSTANCE}`,
   },
